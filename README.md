@@ -17,6 +17,32 @@ with component:
 $ component install jwerle/bitflag --save
 ```
 
+## example
+
+```js
+var bf = BitFlag();
+
+
+// test bflags
+const FLAG1 = (1 << 0)
+    , FLAG2 = (1 << 1)
+    , FLAG3 = (1 << 2)
+    , FLAG4 = (1 << 3)
+    , FLAG5 = (1 << 4)
+
+bf.set(FLAG1);
+bf.set(FLAG2|FLAG4);
+
+if (bf.has(FLAG2)) {
+	console.log('has flag 2');
+}
+
+if (bf.has(FLAG1)) {
+	console.log('has flag 1');
+}
+
+```
+
 ## usage
 
 ### bitflag(i)
