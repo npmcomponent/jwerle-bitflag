@@ -22,8 +22,7 @@ $ component install jwerle/bitflag --save
 ```js
 var bf = BitFlag();
 
-
-// test bflags
+// flags
 const FLAG1 = (1 << 0)
     , FLAG2 = (1 << 1)
     , FLAG3 = (1 << 2)
@@ -74,7 +73,7 @@ Removes a bit from the field
 
 ```js
 bf.unset(128);
-assert(false === bf.has(256));
+assert(false === bf.has(128));
 ```
 
 ### #set(i)
