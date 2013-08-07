@@ -23,7 +23,7 @@ var cache = {}
 BitFlag.read = read;
 function read (i) {
 	if (cache[i]) return cache[i];
-	else return { index: (i/32)|0, bit: i%32 };
+	else return (cache[i] = { index: (i/32)|0, bit: i%32 });
 }
 
 
