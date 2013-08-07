@@ -1,6 +1,6 @@
 {
   "name": "bitflag",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Manage bit flags",
   "main": "index.js",
   "scripts": {
